@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MaterialDesign3</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialog_title">Dialog title</string>
+    <string name="dialog_message">Hello! I am a dialog box.</string>
+    <string name="dialog_positive">Hi</string>
+    <string name="dialog_negative">Bye</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_msg">Message</string>
+</resources>

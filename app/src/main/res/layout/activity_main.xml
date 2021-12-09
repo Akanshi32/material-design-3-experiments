@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Design 3"
+        android:textSize="24sp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/accentColor"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:tint="@color/accentColorActive"
+        style="@style/Widget.Material3.FloatingActionButton.Primary"
+        android:backgroundTint="@color/colorTertiary"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="TODO" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="36dp"
+        android:scrollbarSize="0dp"
+        android:requiresFadingEdge="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleLine="false"
+        app:chipSpacingHorizontal="8dp"
+        app:checkedChip="@+id/chip1"
+        app:singleSelection="false">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_gallery"
+            style="@style/Widget.Material3.Chip.Input.Icon.Elevated"
+            app:checkedIcon="@drawable/ic_menu_gallery"
+            app:chipIcon="@drawable/ic_menu_gallery"
+            android:checked="true"
+            app:ensureMinTouchTargetSize="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Input.Icon.Elevated"
+            android:text="@string/menu_slideshow"
+            app:chipIcon="@drawable/ic_menu_slideshow"
+            app:checkedIcon="@drawable/ic_menu_slideshow"
+            app:ensureMinTouchTargetSize="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Input.Icon.Elevated"
+            android:text="@string/menu_camera"
+            app:chipIcon="@drawable/ic_menu_camera"
+            app:checkedIcon="@drawable/ic_menu_camera"
+            app:ensureMinTouchTargetSize="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Chip.Input.Icon.Elevated"
+            android:text="@string/menu_msg"
+            app:chipIcon="@drawable/ic_baseline_message_24"
+            app:ensureMinTouchTargetSize="true"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tint="@color/accentColor"
+        app:itemTextColor="@color/accentColor"
+        app:itemTextAppearanceActive="@color/accentColorActive"
+        app:itemActiveIndicatorStyle="@style/Widget.Material3.BottomNavigationView.ActiveIndicator"
+        android:background="@color/colorSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

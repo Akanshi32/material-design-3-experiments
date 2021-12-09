@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaterialDesign3" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorSecondary</item>
+        <item name="colorOnPrimary">@color/accentColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorTertiary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">?colorSecondary</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorSurface">@color/colorSecondary</item>
+        <item name="colorOnSurface">?colorOnSecondary</item>
+        <item name="colorOnSurfaceVariant">@color/accentColor</item>
+    </style>
+
+    <style name="Theme.MaterialDesign3.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MaterialDesign3.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MaterialDesign3.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
